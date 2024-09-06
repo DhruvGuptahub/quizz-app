@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Quizz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features:
+- A set of multiple-choice questions.
+- Users can select an answer for each question.
+- Submit button to calculate the score.
+- The score is displayed after submission.
 
-## Available Scripts
+ ##  How It Works
+- The user sees a list of multiple-choice questions.
+- The user selects an option for each question.
+- When they press the "Submit Quiz" button, the app calculates how many questions they answered correctly.
+- The user's score is displayed below the quiz.
 
-In the project directory, you can run:
+ ## Explanation of the Code
+### Questions Array:
 
-### `npm start`
+- We store an array of questions, each with multiple options and a correctAnswer.
+- The array could be extended with more questions as needed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### State Management:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- currentAnswers: Tracks the answers selected by the user for each question.
+- score: Holds the user's score after submitting the quiz. Initially set to null until the user submits their answers.
 
-### `npm test`
+### handleOptionChange:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- This function updates the currentAnswers state when the user selects an answer for a particular question.
 
-### `npm run build`
+### handleSubmit:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- This function compares the selected answers with the correct answers and calculates the score.
+- After calculating the score, it updates the score state.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Form:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The form displays each question with multiple options.
+- Upon submission, the user's answers are compared to the correct ones, and the score is displayed.
