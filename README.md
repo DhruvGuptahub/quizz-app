@@ -45,7 +45,7 @@
 - If the user doesn't submit the quiz in time, the quiz is automatically submitted when the timer hits zero.
 - Timer resets to 30 seconds when switching between quizzes.
 
-##Shuffle Questions:
+## Shuffle Questions:
 
 - The questions are shuffled every time a quiz is loaded.
 - This ensures the user gets the questions in a random order each time they take the quiz.
