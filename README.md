@@ -36,3 +36,27 @@
 
 - The form displays each question with multiple options.
 - Upon submission, the user's answers are compared to the correct ones, and the score is displayed.
+
+# Enhancements Explained
+
+## Timer:
+
+- A countdown timer starts at 30 seconds.
+- If the user doesn't submit the quiz in time, the quiz is automatically submitted when the timer hits zero.
+- Timer resets to 30 seconds when switching between quizzes.
+
+## Shuffle Questions:
+
+- The questions are shuffled every time a quiz is loaded.
+- This ensures the user gets the questions in a random order each time they take the quiz.
+
+## Multiple Quizzes:
+
+- Users can select between two different quizzes: "General Knowledge" and "Tech Quiz".
+- The quizType state is used to switch between quizzes.
+- The questions for the selected quiz are fetched dynamically.
+
+## Styling:
+
+- Basic UI improvements like adding a header, organizing quiz selection, and disabling options after submission.
+- You can further style the app using CSS.
