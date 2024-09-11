@@ -132,6 +132,7 @@ function Quizz() {
                 {!quizzSubmitted && <button type='submit'>Submit Qizz</button>}
             </form>
             {score !== null && <h2>Your Score: {score}/{questions.length} </h2>}
+        <button>sumbmit</button>
         </div>
     )
 }
