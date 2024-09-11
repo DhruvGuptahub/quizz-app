@@ -65,7 +65,7 @@ function Quizz() {
 
             return () => clearTimeout(timer)
         }
-    }, [timeLeft, quizzSubmitted])
+    }, [timeLeft, quizzSubmitted, handleSubmit])
 
 
     const handleOptionChange = (questionIndex, option) => {
